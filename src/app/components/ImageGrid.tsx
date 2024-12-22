@@ -123,42 +123,6 @@ export function ImageGrid({ images, onDelete, onFavorite }: ImageGridProps) {
       </div>
 
       <AnimatePresence>
-        {/* {selectedImage && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/80 flex items-center justify-center p-4 z-50"
-            onClick={() => setSelectedImage(null)}
-          >
-            <div
-              className="relative max-w-4xl w-full bg-white rounded-lg"
-              onClick={e => e.stopPropagation()}
-            >
-              <button
-                className="absolute top-2 right-2 p-1"
-                onClick={() => setSelectedImage(null)}
-              >
-                <X />
-              </button>
-              <img
-                src={selectedImage.url}
-                alt={selectedImage.prompt}
-                className="w-full rounded-t-lg"
-              />
-              <div className="p-4">
-                <p className="text-lg">{selectedImage.prompt}</p>
-                <p className="text-sm text-gray-500 mt-2">
-                  Generated on{" "}
-                  {new Date(selectedImage.createdAt).toLocaleString()}
-                </p>
-                <p className="text-sm text-gray-500">
-                  Generation time: {selectedImage.latency}ms
-                </p>
-              </div>
-            </div>
-          </motion.div>
-        )} */}
         {selectedImage && (
           <motion.div
             initial={{ opacity: 0 }}
